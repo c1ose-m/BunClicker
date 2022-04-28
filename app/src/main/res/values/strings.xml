@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Булка Кликер</string>
+    <string name="login">Имя гоблин:</string>
+    <string name="login_hint">Хто ты?</string>
+    <string name="password">Тетриандох:</string>
+    <string name="password_hint">Пароль!</string>
+    <string name="login_button">Продолжить доедать</string>
+    <string name="signin_button">Купить сладкий рулет</string>
+    <string name="your_text">Ваш булка:</string>
+    <string name="your">0</string>
+    <string name="left_text">Еще есть булка:</string>
+    <string name="left">1000000</string>
+    <string name="power_text">Ваш мощь:</string>
+    <string name="power">5</string>
+    <string name="bun_button">Вкусный булка</string>
+    <string name="goblin_text">Гоблин\nПросто хотеть немножечко булка</string>
+    <string name="goblin_button">Стоить: 100 кус.\nКушать: 5 кус.</string>
+    <string name="anuk_text">Повар Анук\nВождя обожраться мой булка</string>
+    <string name="anuk_button">Стоить: 500 кус.\nКушать: 25 кус.</string>
+    <string name="alotar_text">Вождя Алотар\nКакой вкусный булка с червяк</string>
+    <string name="alotar_button">Стоить: 1000 кус.\nКушать: 50 кус.</string>
+</resources>

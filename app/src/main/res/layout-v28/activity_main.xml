@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/userField"
+        style="@style/table_layout"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bunField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_view"
+                android:layout_weight="1"
+                android:text="@string/login" />
+
+            <EditText
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:hint="@string/login_hint"
+                android:inputType="text"
+                android:textSize="16sp"
+                tools:ignore="Autofill,LabelFor" />
+
+            <TextView
+                style="@style/text_view"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:ignore="Autofill,LabelFor" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:onClick="clickLogin"
+                android:text="@string/login_button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:onClick="clickSignin"
+                android:text="@string/signin_button" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/bunField"
+        style="@style/table_layout"
+        android:layout_height="@dimen/max_size"
+        app:layout_constraintBottom_toTopOf="@id/upgradeField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userField">
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_view"
+                android:text="@string/your_text" />
+
+            <TextView
+                android:id="@+id/your"
+                style="@style/text_view"
+                android:text="@string/your" />
+
+            <TextView
+                style="@style/text_view"
+                android:text="@string/left_text" />
+
+            <TextView
+                android:id="@+id/left"
+                style="@style/text_view"
+                android:text="@string/left" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_view"
+                android:text="@string/power_text" />
+
+            <TextView
+                android:id="@+id/power"
+                style="@style/text_view"
+                android:text="@string/power" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/bun"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:onClick="clickBun"
+            android:text="@string/bun_button"
+            app:layout_constraintBottom_toTopOf="@id/upgradeField"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userField" />
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/upgradeField"
+        style="@style/table_layout"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bunField">
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_view"
+                android:layout_weight="1"
+                android:text="@string/goblin_text"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/goblin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="goblinClick"
+                android:text="@string/goblin_button"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_view"
+                android:layout_weight="1"
+                android:text="@string/anuk_text"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/anuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="anukClick"
+                android:text="@string/anuk_button"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/text_view"
+                android:layout_weight="1"
+                android:text="@string/alotar_text"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/alotar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="alotarClick"
+                android:text="@string/alotar_button"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
